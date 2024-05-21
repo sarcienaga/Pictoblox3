@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Sensor  de ultrasonido | Proyecto Radar </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Proyecto Radar</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li id="active"><a href="sensor__de_ultrasonido.html" class="active no-ch">Sensor  de ultrasonido</a></li>
+   <li><a href="activando_el_giro_del_servo.html" class="no-ch">Activando el giro del servo</a></li>
+   <li><a href="radar_ultrasnico.html" class="no-ch">Radar ultrasónico</a></li>
+   <li><a href="proyecto_de_radar_avanzado.html" class="daddy">Proyecto de radar avanzado</a>
+   <ul class="other-section">
+      <li><a href="desarrollo_del_proyecto.html" class="no-ch">Desarrollo del proyecto</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>6</strong></span> <span class="sep">| </span><a href="activando_el_giro_del_servo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Sensor  de ultrasonido</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Medir distancia con PonchoBot</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_128_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>1°</h2>
+<p style="text-align: center;"><span style="color: #000000; font-size: 14pt;"><strong>Sensor de Ultrasonido HC-SR04</strong></span></p>
+<p><span style="color: #ff6600;"><strong>PonchoBot</strong></span> trae un sensor de ultrasonido conectado a los pines A5 y A6 en su placa <strong>Arduino Nano.</strong></p>
+<p><img src="img2.1.png" width="359" height="216" style="float: left; margin: 10px;" /><img src="img1.png" width="198" height="129" style="float: left; margin-right: 5px; margin-left: 5px;" /></p>
+<p></p>
+<p></p>
+<p></p>
+<p><span style="font-size: 1.05em;">Los</span><span style="font-size: 1.05em;"> </span><strong style="font-size: 1.05em;">sensores ultrasónicos</strong><span style="font-size: 1.05em;"> </span><span style="font-size: 1.05em;">miden la distancia mediante el uso de ondas ultrasónicas, </span><span style="font-size: 12pt;">inaudible para el oído humano</span><span style="font-size: 1.05em;"><span style="font-size: 12pt;">.</span> </span></p>
+<p><span style="font-size: 1.05em;">El cabezal</span><span style="font-size: 1.05em;"> </span><strong style="font-size: 1.05em;">Tigger</strong><span style="font-size: 1.05em;"> </span><span style="font-size: 1.05em;">emite una onda ultrasónica y el</span><span style="font-size: 1.05em;"> </span><strong style="font-size: 1.05em;">Echo</strong><span style="font-size: 1.05em;"> </span><span style="font-size: 1.05em;">recibe el rebote de la onda que retorna desde el objeto. Al ser conocida la <strong>velocidad</strong> de la onda y poder conocer el <strong>tiempo</strong> que tarda en retornar <em>(a través de los bloques de <strong>Pictoblox</strong>)</em> se puede calcular la distancia, despejada de la fórmula de velocidad: <strong>V=Espacio/Tiempo</strong> </span></p>
+<h2><span style="font-size: 1.05em;"></span>2°</h2>
+<p><img src="img0.png" width="611" height="236" style="display: block; float: right; margin: 10px 8px 10px 8px;" /></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Programación</strong></span></p>
+<p style="text-align: justify;">Su programación es muy sencilla en <span style="color: #000000;"><strong>Pictoblox,</strong></span> ya que tiene un bloque que hace <strong>todo el trabajo</strong>:</p>
+<ul>
+<li style="text-align: justify;">
+<p>Calcula la distancia con la siguiente fórmula:</p>
+<p style="text-align: left;"><span style="color: #ff0000;"><strong>Distancia = 1/2 × T × C</strong></span>  (T: tiempo entre la emisión y la recepción. C: velocidad del sonido.</p>
+</li>
+<li style="text-align: justify;">Multiplica por 1/2 ya que T es el <strong>tiempo</strong> de recorrido de <strong>ida y vuelta</strong>.</li>
+<li style="text-align: justify;">Nos entrega el resultado en <strong>centímetros</strong>.</li>
+</ul>
+<h2>3°</h2>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>¡ A experimentar !</strong></span></p>
+<p>El desafío es que <span style="color: #ff6600;"><strong>PonchoBot</strong></span> -a través de su sensor de ultrasonido- <span style="color: #3366ff;"><em>mida la distancia de objetos que se ubiquen al frente de él, a una distancia previamente conocida (medida con una regla milimetrada) para comprobar el nivel de precisión.</em></span> A continuación una pequeña guía a tener en cuenta para cumplir con el desafío:</p>
+<ol>
+<li>Conectar el cable usb del <strong>Arduino Nano</strong> de <span style="color: #ff6600;"><strong>PonchoBot</strong></span> a nuestra PC.</li>
+<li> Arrancar <strong>Pictoblox.</strong></li>
+<li>Seleccionar desde el menú <span style="color: #800080;">Board</span> la placa <strong>Arduino Nano</strong> y el puerto de conexión.</li>
+<li>Construir el programa arrastrando los bloques correspondientes.</li>
+<li>Cargar el programa a la placa <em>(<span style="color: #800080;">Upload Firmware</span>). <span style="color: #ff0000;">No olvidar clic en</span> <span style="color: #339966;">banderita verde</span> <span style="color: #ff0000;">para disparar el programa!!</span></em></li>
+<li>Ubicar objetos a diferentes distancias (chequear dichas distancias con una regla milimetrada) y comparar con las distancias obtenidas.</li>
+<li>Contestar:
+<ol>
+<li><em>¿Qué medidas entrega el sensor cuando los objetos están <span style="color: #ff0000;">muy cerca (menos de 3-4 cm)</span>?</em> </li>
+<li><em>¿Qué medidas entrega el sensor cuando los objetos están <span style="color: #ff0000;">muy lejos (más de 40-60 cm)</span>? </em></li>
+</ol>
+</li>
+</ol>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>6</strong></span> <span class="sep">| </span><a href="activando_el_giro_del_servo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

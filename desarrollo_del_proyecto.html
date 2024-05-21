@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Desarrollo del proyecto | Proyecto Radar </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Proyecto Radar</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="sensor__de_ultrasonido.html" class="no-ch">Sensor  de ultrasonido</a></li>
+   <li><a href="activando_el_giro_del_servo.html" class="no-ch">Activando el giro del servo</a></li>
+   <li><a href="radar_ultrasnico.html" class="no-ch">Radar ultrasónico</a></li>
+   <li class="current-page-parent"><a href="proyecto_de_radar_avanzado.html" class="current-page-parent daddy">Proyecto de radar avanzado</a>
+   <ul>
+      <li id="active"><a href="desarrollo_del_proyecto.html" class="active no-ch">Desarrollo del proyecto</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="proyecto_de_radar_avanzado.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>6</strong></span>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Desarrollo del proyecto</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id10">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Descripción del programa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_129_2" class="block iDevice_content">
+<div class="exe-text"><p>En este proyecto se incorporan <span style="color: #993300;">nuevos recursos gráficos y bloques</span> para intentar generar una simulación realista del <span style="color: #993300;">funcionamiento de un radar</span>. <strong>Radar 1.0</strong> tiene 3 objetos o personajes y un Escenario con un fondo:</p>
+<ol>
+<li style="text-align: left;"><strong>sonda</strong></li>
+<li style="text-align: left;"><strong>cobertura</strong></li>
+<li style="text-align: left;"><strong>Goalie</strong></li>
+<li style="text-align: left;"><strong>Un </strong><strong>Escenario</strong></li>
+</ol>
+<p style="text-align: center;"><span style="color: #ff0000;"><em><strong>Utiliza las flechas para navegar por el desarrollo del proyecto</strong></em></span></p>
+<div class="exe-fx exe-carousel">
+<h2>1. Objeto sonda: disfraces </h2>
+<p><strong>sonda</strong> está compuesto por dos disfraces, uno usado para el <strong>paneo</strong> de 0° a 180° y el otro para el paneo de 180° a 0°</p>
+<p><img src="img0.2.png" width="510" height="239" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>1.a. Bloques de sonda: programa principal</h2>
+<table border="1" style="width: 643px;" height="376">
+<tbody>
+<tr>
+<td style="width: 241.108px;"><img src="img1.2.png" width="351" height="361" alt="" /></td>
+<td style="width: 387.003px;">
+<p>El programa principal inicia indicando que el cable de señal de nuestro servo está conectado al <strong>pin 9</strong> de <strong>Arduino Nano</strong> y se ubicará en un ángulo aproximado de 90°, es decir apuntando hacia el frente de <strong><span style="color: #ff6600;">PonchoBot</span>.</strong></p>
+<p>Luego, <strong>dentro del ciclo repetir</strong> tenemos organizadas las diferentes partes con nuevos bloques <strong>creados</strong> en la categoría Mis Bloques.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>1.b. Bloques de sonda: valores iniciales</h2>
+<table border="1" style="width: 635px; height: 579px;">
+<tbody>
+<tr style="height: 507px;">
+<td style="width: 221.378px; height: 507px;"><img src="img2.png" width="335" height="338" alt="" /></td>
+<td style="width: 398.736px; height: 507px;">
+<p>Como su nombre lo indica, en <strong>condiciones iniciales</strong> establecemos la variable  <em><span style="color: #ffffff; background-color: #ff9900;"> grados servo </span></em> que indica los grados de partida <em>(30)</em> y la variable <span style="color: #ffffff; background-color: #ff9900;"><em>Control de grados</em></span> que se utilizará para controlar la repetición de los ciclos <span style="color: #ffffff; background-color: #ff9900;">repetir.</span></p>
+<p>El objeto se ubica en la posición <strong>0, -180</strong> es decir en el centro del borde inferior <em>(<strong>abajo al medio</strong>)</em>:</p>
+<p><img src="img11.1.png" width="399" height="301" alt="" /></p>
+<p>Se recurre al bloque <span style="color: #ffffff; background-color: #3366ff;"> apuntar en dirección 90 </span> porque se cambiará de dirección en el giro durante el programa, y es necesario, cada vez que comience un nuevo ciclo, apuntar el objeto <strong>sonda</strong> <em>(su primer disfraz)</em> hacia su <strong>posición original</strong>. </p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>1.c. Bloques de sonda: giro del servo de derecha a izquierda</h2>
+<table border="1" style="width: 91.9741%;">
+<tbody>
+<tr>
+<td style="width: 43.0245%;"><img src="img7.png" /></td>
+<td style="width: 48.9511%;">
+<p>El bloque <span style="color: #ffffff; background-color: #ff0000;"> definir giro servo derecha izquierda </span> hace que el <strong>disfraz1 de sonda </strong>gire 180° de derecha a izquierda (<em>simulando el paneo del radar</em>). A los 31° (<em>es decir que el ciclo se repitió 30 veces anteriormente</em>), la variable <span style="color: #ffffff; background-color: #ff9900;">Control de grados</span> "permite" ingresar dentro de la condición <span style="color: #ffffff; background-color: #ff9900;"> Control de grados </span><span style="color: #ffffff; background-color: #99cc00;"> &gt;  </span><span style="color: #000000; background-color: #ffffff;"> 30 <span style="background-color: #99cc00;">  </span></span><span style="color: #000000;">. Alli comienza a girar el servo <em>(evitando los ángulos menores a 30°)</em></span><span style="color: #000000;"> y llama a </span><span style="color: #000000; background-color: #ffffff;"><span style="color: #ffffff; background-color: #ff0000;"> Objeto en el radar </span></span><span style="color: #000000;">  para comenzar a medir la distancia y presentar en pantalla al objeto que estaba oculto: </span><span style="color: #000000;"><strong>Goalie</strong><em>(un personaje de la biblioteca de <strong>Pictoblox</strong>)</em>. </span></p>
+<p><span style="color: #000000;">Luego se <strong>incrementa</strong> el valor de los grados del servo en 1, para que en el próximo ciclo (del </span><span style="color: #000000; background-color: #ffffff;"><span style="color: #ffffff; background-color: #ffcc00;"> repetir</span>180</span><span style="color: #000000;"> </span><span style="color: #000000;">) el servo continúe con su giro.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Armado de la condición lógica</h2>
+<p><span style="font-size: 1.05em;">Para armar la condición lógica del bloque </span><span style="background-color: #ffcc00; color: #ffffff;"> si </span><span style="background-color: #99cc00;">  </span><span style="color: #ffffff; background-color: #ff9900;"> Control de grados </span><span style="color: #ffffff; background-color: #99cc00;"> &gt;  </span><span style="color: #000000; background-color: #ffffff;"> 30 <span style="background-color: #99cc00;">  y <span style="color: #ffffff; background-color: #ff9900;"> Control de grados </span><span style="color: #ffffff; background-color: #99cc00;"> &lt;  </span><span style="background-color: #ffffff;"> 151</span></span></span><span style="color: #000000;"> </span><span style="color: #000000;">se puede proceder de la siguiente manera:</span><strong style="font-size: 1.05em;"><br /></strong></p>
+<p><span style="color: #000000; background-color: #ffffff;"><span style="background-color: #99cc00;"><span style="background-color: #ffffff;"><span style="background-color: #99cc00;"><span style="background-color: #ffffff;"></span></span></span></span></span><strong><span style="color: #000000; background-color: #ffffff;"><span style="background-color: #99cc00;"><span style="background-color: #ffffff;"><span style="background-color: #99cc00;"><span style="background-color: #ffffff;"><video width="719" height="719" style="background-image: url('img/object.gif'); display: block; margin-left: auto; margin-right: auto;" controls="controls" autoplay="autoplay" muted="muted">
+<source src="ArmadoCondicionLogica.mp4" type="video/mp4" /></video></span></span></span></span></span></strong></p>
+<h2>1.d. Bloques de sonda: midiendo distancias</h2>
+<table border="1" style="width: 636px; height: 408px;">
+<tbody>
+<tr style="height: 403px;">
+<td style="width: 373.097px; height: 403px;">
+<p><img src="img5.png" width="527" height="253" alt="" /></p>
+<p><span style="color: #3366ff;"><strong>Nota:</strong> <span style="font-size: 10pt;"><em>hay que tener en cuenta que el sensor ultrasónico usado, nos</em></span><span style="font-size: 10pt;"><em> entrega medidas aproximadas y su velocidad de actualización en el cambio de medidas no es inmediato. Su rango de medida se encuentra entre los 4 y los 40 cm aproximadamente. En nuestro caso lo limitamos por programa entre los 4 y 25 cm.</em></span></span></p>
+</td>
+<td style="width: 248.011px; height: 403px;">
+<p>Se <strong>almacena</strong> la distancia medida por el sensor ultrasónico <em>(es una medida aproximada)</em> en la variable <span style="color: #ffffff; background-color: #ff9900;"> distancia </span> y si la condición de que sea <strong>menor a 25 cm</strong> se cumple, se ingresa al condicional y se ejecuta el bloque <span style="color: #ffffff; background-color: #ff9900;"> enviar objeto a la vista </span>. Este bloque <strong>envía un mensaje</strong> y quien lo reciba va a poder seguir con la ejecución del programa. En este caso vamos a hacer que <strong>lo reciba</strong> el objeto <strong>Goalie</strong> para mostrarse en pantalla, en las coordenadas correspondientes. La programación de <strong>Goalie</strong> la veremos más adelante.  </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>1.e. Bloques de sonda: giro del servo de izquierda a derecha</h2>
+<p><span style="font-size: 1.05em;">Continuando con los bloques del objeto/personaje </span><strong style="font-size: 1.05em;">sonda</strong><span style="font-size: 1.05em;">, se presentan los bloques que <strong>gestionan el giro</strong> de izquierda a derecha, los cuales son casi <strong>iguales</strong> a los que gestionan el giro de derecha a izquierda visto anteriormente:</span><strong><span style="color: #000000; background-color: #ffffff;"><span style="background-color: #99cc00;"><span style="background-color: #ffffff;"><span style="background-color: #99cc00;"><span style="background-color: #ffffff;"></span></span></span></span></span></strong></p>
+<table border="1" style="width: 98.0355%;">
+<tbody>
+<tr>
+<td style="width: 57.393%;"><img src="img7.1.png" width="403" height="344" alt="" /></td>
+<td style="width: 40.6431%;">
+<p>El bloque <span style="color: #ffffff; background-color: #ff0000;"> definir giro servo izquierda derecha </span> hace que <strong>disfraz2 de sonda </strong>gire 180° de izquierda a derecha (<em>simulando el paneo inverso del radar</em>). La variable <span style="color: #ffffff; background-color: #ff9900;"> Control de grados </span> ahora disminuye -1 <em>(de 180 a 0)</em> y a los 149° "permite" ingresar dentro de la condición  <span style="color: #ffffff; background-color: #ff9900;"> Control de grados </span><span style="color: #ffffff; background-color: #99cc00;"> &lt;  </span><span style="color: #000000; background-color: #ffffff;"> 150 <span style="background-color: #99cc00;">  </span></span><span style="color: #000000;">. Alli comienza a girar el servo <em>(evitando los ángulos mayores a 150°)</em></span><span style="color: #000000;"> y llama a </span><span style="color: #000000; background-color: #ffffff;"><span style="color: #ffffff; background-color: #ff0000;"> Objeto en el radar </span></span><span style="color: #000000;">  para comenzar a <strong>medir nuevamente la distancia</strong> y presentar en pantalla al objeto que estaba oculto </span><span style="color: #000000;"><strong>Goalie </strong><em>(un personaje de la biblioteca de <strong>Pictoblox</strong>), </em>cuando detecte un objeto<em>.</em></span></p>
+<p><span style="color: #000000;">Luego se <strong>decrementa</strong> el valor de los grados del servo en -1, para que en el próximo ciclo (del </span><span style="color: #000000; background-color: #ffffff;"><span style="color: #ffffff; background-color: #ffcc00;"> repetir</span>180</span><span style="color: #000000;"> ) el servo continúe con su giro. Al finalizar el ciclo se vuelve a "</span><span style="color: #000000;"><strong><em>desgirar</em></strong> "al objeto <strong>sonda </strong>y dejarlo en su posición original, con el bloque </span><span style="background-color: #3366ff; color: #ffffff;">girar a la izquierda 180 grados</span><span style="color: #000000;">. </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Goalie: bloques de programa</h2>
+<p><strong>El objeto/personaje</strong> <strong>Goalie </strong>es el que se muestra cuando el sensor de ultrasonido detecta una distancia <strong>menor a 24 cm y mayor a 4 cm</strong>. El mismo es el que <strong>recibe el mensaje</strong> enviado por <span style="color: #ffffff; background-color: #ff0000;"> Objeto en el radar </span><span style="color: #ffffff;"><em><span style="color: #000000;">(Objeto a la vista). </span></em></span></p>
+<p><span style="color: #ffffff;"><span style="color: #000000;">Sus bloques son:</span></span></p>
+<p><span style="color: #ffffff; background-color: #ff0000;"><em><span style="color: #000000; background-color: #ffffff;"><img src="img8.png" width="925" height="344" alt="" /></span></em></span></p>
+<p><span style="color: #ffffff;"><span style="color: #000000;">El bloque de la <span style="color: #ffffff; background-color: #339966;">bandera verde</span>, oculta a <strong>Goalie al dar inicio al programa </strong><em>(no se lo ve en el escenario/pantalla),</em> le reduce el tamaño un 50% y lo ubica en el margen superior derecho <em>(240,180)</em>.</span></span></p>
+<p><span style="color: #ffffff;"><span style="color: #000000;">El bloque de  </span></span><span style="color: #ffffff; background-color: #ff0000;"><span style="color: #000000; background-color: #ffffff;"><span style="color: #ffffff; background-color: #ffcc00;"> al recibir  ocultar señal </span></span></span><span style="color: #ffffff;"><span style="color: #000000;"><em>(el que recibe el mensaje)</em> simplemente oculta a <strong>Goalie </strong>cuando el sensor ultrasónico <strong>no detecta objetos</strong> dentro del rango establecido <em>(4-25 cm)</em>.</span></span></p>
+<table border="1" style="width: 100%; border-style: solid; border-color: #f70707; background-color: #f2e4e4;">
+<tbody>
+<tr>
+<td style="width: 100%;"><em><span style="color: #000000;">Recordemos que el mensaje es enviado por el procedimiento </span><span style="color: #ffffff; background-color: #ff0000;"> Objeto en el radar </span><span style="color: #000000;">, y la programación para recibirlo está en el objeto que lo recibe: </span><strong style="color: #000000;">Goalie.</strong></em></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;"><span style="color: #000000;">El bloque  </span></span><span style="color: #ffffff; background-color: #ff0000;"><span style="color: #000000; background-color: #ffffff;"><span style="color: #ffffff; background-color: #ffcc00;"> al recibir  objeto a la vista </span></span></span><span style="color: #ffffff;"><span style="color: #000000;"><em>(el que recibe el mensaje)</em></span></span><span style="color: #ffffff;"><span style="color: #000000;"> muestra uno de los dos disfraces de <strong>Goalie</strong><em>(para simular un movimiento de saludo)</em> y lo ubica en las coordenadas x,y que se forman a través del coseno y seno del ángulo de giro del servo. </span></span></p>
+<h2><span style="font-size: 14pt;">Goalie: Cómo armar el bloque de coordenadas</span> </h2>
+<p><span style="color: #ffffff;"><span style="color: #000000;">Para armar el bloque de las coordenadas x,y se puede proceder de la siguiente manera:</span></span></p>
+<p><span style="color: #ffffff; background-color: #ff0000;"><span style="color: #000000; background-color: #ffffff;"><video width="808" height="808" style="background-image: url('img/object.gif'); display: block; margin-left: auto; margin-right: auto;" controls="controls" autoplay="autoplay" muted="muted">
+<source src="CosenoSenoPictoblox.mp4" type="video/mp4" /></video></span></span></p>
+<h2>3. cobertura: bloques de programa</h2>
+<p><span style="color: #ffffff;"><span style="color: #000000;">El objeto/personaje <strong>cobertura</strong> simplemente muestra en pantalla los <strong>semicírculos</strong> ubicando a los mismos <strong>por encima</strong> de los demás objetos. Sus coordenadas deben <strong>coincidir con los 3 rayos</strong> que salen del centro del borde inferior, los cuales están dibujados como <strong>fondo</strong> del <strong>Escenario</strong>. Sus bloques son:</span></span></p>
+<p><span style="color: #ffffff; background-color: #ff0000;"><span style="color: #000000; background-color: #ffffff;"></span></span></p>
+<p><span style="color: #ffffff; background-color: #ff0000;"><span style="color: #000000; background-color: #ffffff;"><img src="img10.png" width="216" height="173" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<h2>4. Escenario: fondo</h2>
+<p><strong>Escenario</strong>, no tiene bloques de programa, solamente un fondo (<em>un disfraz</em>) de color <span style="background-color: #333333; color: #ffffff;">negro</span> sobre los cuales salen los <span style="color: #00ff00;">rayos del radar</span>.</p>
+<p><span style="color: #ffffff; background-color: #ff0000;"><span style="color: #000000; background-color: #ffffff;"></span></span></p>
+<p><img src="img11.png" width="441" height="327" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="proyecto_de_radar_avanzado.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>6</strong></span>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Activando el giro del servo | Proyecto Radar </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Proyecto Radar</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="sensor__de_ultrasonido.html" class="no-ch">Sensor  de ultrasonido</a></li>
+   <li id="active"><a href="activando_el_giro_del_servo.html" class="active no-ch">Activando el giro del servo</a></li>
+   <li><a href="radar_ultrasnico.html" class="no-ch">Radar ultrasónico</a></li>
+   <li><a href="proyecto_de_radar_avanzado.html" class="daddy">Proyecto de radar avanzado</a>
+   <ul class="other-section">
+      <li><a href="desarrollo_del_proyecto.html" class="no-ch">Desarrollo del proyecto</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="sensor__de_ultrasonido.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>3</strong> de <strong>6</strong></span> <span class="sep">| </span><a href="radar_ultrasnico.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Activando el giro del servo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paneo con Servo de medio giro</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_130_2" class="block iDevice_content">
+<div class="exe-text"><p></p>
+<div class="exe-fx exe-tabs">
+<h2>1°</h2>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Control del medio giro del servo</strong></span></p>
+<p>A través de un <strong>servo</strong>, sobre el cual está montado el <strong>sensor de ultrasonido</strong>, <span style="color: #ff6600;"><strong>PonchoBot</strong></span> puede realizar un <strong>paneo</strong> a su alrededor, a los efectos de <strong>detectar obstáculos</strong> entre los 4 y los 40 cm aproximadamente.</p>
+<p>A modo de ejemplo, se propone un programa con nuevos bloques <em>(del tipo estructuras de control) <span style="color: #ffffff; background-color: #ff9900;"> repetir hasta que &lt;...&gt; </span></em> y el uso de variables <span style="color: #ffffff; background-color: #ff6600;"> mi variable </span><span style="color: #000000;">.</span></p>
+<p><span style="color: #3366ff;"><em><strong>Nota:</strong> una variable en programación es un espacio en memoria que almacena valores que pueden ir cambiando (variando) durante la ejecución del programa. Se las identifica con un nombre (en nuestro caso "<strong>mi variable</strong>") y pueden ser usadas en operaciones matemáticas y lógicas (de comparación).</em></span></p>
+<table border="1" style="width: 834px; height: 721px;">
+<tbody>
+<tr style="height: 719px;">
+<td style="width: 289.29px; height: 719px;">
+<p><img src="img1.1.png" width="330" height="533" alt="" /></p>
+</td>
+<td style="width: 529.815px; height: 719px;">
+<p>Luego del bloque inicial <span style="color: #ffffff; background-color: #ff9900;"><strong> al presionar ... </strong> </span> tenemos el bloque que permite a <strong>Arduino</strong> saber en que pin está conectado el cable de señal del servo. En <span style="color: #ff6600;"><strong>PonchoBot</strong></span> este cable está conectado al pin digital <strong>D9</strong>.</p>
+<p><span style="color: #ff0000;"><img src="servosg90.png" alt="" width="187" height="149" style="display: block; margin-left: auto; margin-right: auto;" /></span><span style="color: #000000;">Por eso en el bloque para manejar el servo se selecciona el <strong>pin 9</strong> y con un giro de 90° ó 91° (<em>es decir ubicando el sensor de ultrasonido aproximadamente mirando hacia el frente</em>).</span></p>
+<p><span style="color: #000000;">A continuación recurrimos al uso de <strong>variables</strong> para poder almacenar valores <em>(en este caso los ángulos que va a recorrer el servo).</em> En la categoría Variables, <strong>Pictoblox</strong> trae ya creada <span style="color: #ffffff; background-color: #db880b;"> mi variable </span> y los diferentes bloques para controlar su comportamiento. Por ej. el bloque de <span style="background-color: #db880b; color: #ffffff;"> establecer mi variable a <span style="color: #000000; background-color: #ffffff;"> 30 </span>  </span> le carga a <span style="color: #ffffff; background-color: #ff9900;"> mi variable </span> el valor inicial de 30. El bloque <span style="color: #ffffff; background-color: #db880b;"> cambiar mi variable en  <span style="color: #000000; background-color: #ffffff;"> 1 </span>  </span> va aumentando su valor en 1 cada vez que se repite el ciclo <span style="color: #ffffff; background-color: #ff9900;"> repetir hasta que &lt;...&gt; </span>, es decir <em>31, 32, 33, ... 150</em>.</span></p>
+<p><span style="color: #000000;">No se aconseja hacer llegar el giro del servo a 180° ni a 0°; en nuestro caso se limitó a 150° y 30° <em><span style="color: #ff0000; font-size: 10pt;">(para evitar el riesgo de que al llegar a sus límites se traben los engranajes internos)</span>.</em> </span></p>
+<p><span style="color: #000000;"><strong>En definitiva,</strong> el programa lo que hace es <strong>mover el servo</strong> <em>(y por ende el <strong>sensor de ultrasonido</strong>)</em> desde los <strong>30° a los 150°</strong> y luego desde los <strong>150° a los 30°</strong>. Esto lo hace dos veces, por eso se encierra todo en un ciclo <span style="background-color: #ffcc00; color: #ffffff;"><span style="background-color: #ff9900;"> repetir </span><span style="background-color: #ffffff;"> </span><span style="color: #000000; background-color: #ffffff;">2 </span><span style="background-color: #ff9900;">  </span></span>   </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>2°</h2>
+<p style="text-align: center;"><span style="color: #000000; font-size: 14pt;"><strong>Ubicar bloques en <span style="background-color: #ff9900; color: #ffffff;"> repetir hasta que &lt;...&gt; </span></strong></span></p>
+<p><span style="color: #3366ff;"><strong>Como seleccionar y ubicar los bloques en la estructura:</strong></span> <span style="color: #000000;"></span><span style="color: #000000;"><span style="color: #ffffff; background-color: #ff9900;"><span style="color: #000000;"><video width="712" height="712" style="background-image: url('img/object.gif'); display: block; margin-left: auto; margin-right: auto;" controls="controls" autoplay="autoplay" muted="muted">
+<source src="MiVariablePictoblox.mp4" type="video/mp4" /></video></span></span></span></p>
+</div>
+<p></p>
+<p><span style="color: #3366ff;"><strong></strong></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id13">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Fichero adjunto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_82" class="block iDevice_content">
+<p><a href="https://drive.google.com/uc?export=download&amp;id=1yjmrHOZg5X_MNixRUYlfMoh5AmUY3dwh" title="[.sb3 - 63 KB]">Descargar programa de ejemplo</a><span class="exe-link-data file-size"> (.sb3 - 63 <abbr title="KiloBytes" lang="en">KB</abbr>)</span></p>
+</div>
+<ul class='exeFileList'></ul></div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="sensor__de_ultrasonido.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>3</strong> de <strong>6</strong></span> <span class="sep">| </span><a href="radar_ultrasnico.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
